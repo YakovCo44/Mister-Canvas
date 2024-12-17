@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Canvas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js"></script>
+</head>
+<body>
+    <h1 class="page-title">Unleash Your Creativity - Draw, Dream, and Discover</h1>
+    <div class="toolbar">
+        <button id="clearBtn">Clear</button>
+        <input type="color" id="colorPicker" value="#000000">
+        <label for="brushSize">Brush Size:</label>
+        <input type="range" id="brushSize" min="1" max="50" value="5">
+        <select id="shapeSelector">
+            <option value="select">Select Your Shape</option>
+            <option value="circle">Circle</option>
+            <option value="square">Square</option>
+            <option value="triangle">Triangle</option>
+            <option value="pencil">Pencil</option>
+        </select>
+        <button id="saveBtn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Save_icon.svg" alt="Save Icon">
+            Save Image
+        </button>        
+        <button id="shareBtn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook Logo">
+            Share to Facebook
+        </button>
+    </div>
+    <canvas id="paintCanvas" width="800" height="600"></canvas>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
