@@ -31,9 +31,9 @@ shareBtn.addEventListener('click', async () => {
 
     const blob = await (await fetch(imageDataURL)).blob()
 
-    const cloudName = 'dpuyrzrdd' 
-    const apiKey = '222629614644396' 
-    const apiSecret = 'hkYTz6GRR17-dQ3u3t-TqACtWls' 
+    const cloudName = 'ENTER_YOUR_CLOUD_NAME' 
+    const apiKey = 'ENTER_YOUR_API_KEY' 
+    const apiSecret = 'ENTER_YOUR_SECRET_API_KEY' 
     const cloudinaryURL = `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`
 
     const timestamp = Math.floor(Date.now() / 1000) 
